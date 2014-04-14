@@ -1,3 +1,6 @@
+2.6
+	- added support for LBP6000 and LBP6018 by using the 2.60 CAPT driver from
+	Canon @DincerKavraal
 2.4
 	- added support for LBP6000 and LBP6018 by using the 2.20 CAPT driver from
 	Canon

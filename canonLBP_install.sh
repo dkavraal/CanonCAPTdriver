@@ -145,8 +145,8 @@ install_driver() {
 	else
 		ARCH="i386"
 	fi
-	cndrv_common="cndrvcups-common_2.20-1_${ARCH}.deb"
-	cndrv_capt="cndrvcups-capt_2.20-1_${ARCH}.deb"
+	cndrv_common="cndrvcups-common_2.60-1_${ARCH}.deb"
+	cndrv_capt="cndrvcups-capt_2.60-1_${ARCH}.deb"
 	echo "Installing driver for model: $PRINTER_MODEL"
 	echo "using file: CNCUPS${PRINTER_SMODEL}CAPTK.ppd"
 	echo "Installing packages..."
@@ -186,6 +186,7 @@ install_driver() {
 	echo -e "\nPower on your printer! :)"
 	echo "Go to System - Administration - Printing and do the following:"
 	echo "  1. disable $PRINTER_MODEL-2 but do not delete it since Ubuntu will recreate it automatically;"
+	echo "		(if there is only one, it's ok anyway)"
 	echo "  2. set $PRINTER_MODEL as your default printer;"
 	echo "  3. reboot your machine and print a test page."
 }
